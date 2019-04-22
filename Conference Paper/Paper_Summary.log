@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 16:02
 entering extended mode
 **./Paper_Summary.tex
 (Paper_Summary.tex
@@ -533,17 +533,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{C:/Users/Catalin Veghes/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-]
-Underfull \vbox (badness 2213) has occurred while \output is active []
-
- [2]
+] [2]
 <system.png, id=13, 450.9347pt x 271.76532pt>
 File: system.png Graphic file (type png)
 <use system.png>
-Package pdftex.def Info: system.png  used on input line 77.
+Package pdftex.def Info: system.png  used on input line 83.
 (pdftex.def)             Requested size: 258.0125pt x 155.49667pt.
 
-Overfull \hbox (6.0125pt too wide) in paragraph at lines 77--78
+Overfull \hbox (6.0125pt too wide) in paragraph at lines 83--84
 [][] 
  []
 
@@ -576,7 +573,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  4384 strings out of 492945
  66085 string characters out of 3122255
- 142102 words of memory out of 3000000
+ 138102 words of memory out of 3000000
  8222 multiletter control sequences out of 15000+200000
  35842 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -589,7 +586,7 @@ lin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
 <C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Paper_Summary.pdf (4 pages, 219420 bytes).
+Output written on Paper_Summary.pdf (4 pages, 219272 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
