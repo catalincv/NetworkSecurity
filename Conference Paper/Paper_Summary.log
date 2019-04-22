@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 07:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 15:33
 entering extended mode
 **./Paper_Summary.tex
 (Paper_Summary.tex
@@ -534,17 +534,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-<system.png, id=10, 450.9347pt x 271.76532pt>
+Underfull \vbox (badness 2213) has occurred while \output is active []
+
+ [2]
+<system.png, id=13, 450.9347pt x 271.76532pt>
 File: system.png Graphic file (type png)
 <use system.png>
-Package pdftex.def Info: system.png  used on input line 70.
+Package pdftex.def Info: system.png  used on input line 77.
 (pdftex.def)             Requested size: 258.0125pt x 155.49667pt.
 
-Overfull \hbox (6.0125pt too wide) in paragraph at lines 70--71
+Overfull \hbox (6.0125pt too wide) in paragraph at lines 77--78
 [][] 
  []
 
-[2 <./system.png>] (Paper_Summary.bbl
+[3 <./system.png>] (Paper_Summary.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 32--36
 \OT1/ptm/m/n/8 https://www.gartner.com/en/newsroom/press-releases/2017-05-23-
  []
@@ -567,13 +570,13 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[4
 
 ] (Paper_Summary.aux) ) 
 Here is how much of TeX's memory you used:
  4384 strings out of 492945
  66085 string characters out of 3122255
- 137102 words of memory out of 3000000
+ 142102 words of memory out of 3000000
  8222 multiletter control sequences out of 15000+200000
  35842 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -586,9 +589,9 @@ lin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
 <C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Paper_Summary.pdf (3 pages, 213870 bytes).
+Output written on Paper_Summary.pdf (4 pages, 219420 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
