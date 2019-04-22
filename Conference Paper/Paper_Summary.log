@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 07:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  22 APR 2019 07:35
 entering extended mode
 **./Paper_Summary.tex
 (Paper_Summary.tex
@@ -544,7 +544,7 @@ Overfull \hbox (6.0125pt too wide) in paragraph at lines 70--71
 [][] 
  []
 
-(Paper_Summary.bbl [2 <./system.png>]
+[2 <./system.png>] (Paper_Summary.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 32--36
 \OT1/ptm/m/n/8 https://www.gartner.com/en/newsroom/press-releases/2017-05-23-
  []
@@ -572,7 +572,7 @@ Before submitting the final camera ready copy, remember to:
 ] (Paper_Summary.aux) ) 
 Here is how much of TeX's memory you used:
  4384 strings out of 492945
- 66005 string characters out of 3122255
+ 66085 string characters out of 3122255
  137102 words of memory out of 3000000
  8222 multiletter control sequences out of 15000+200000
  35842 words of font info for 71 fonts, out of 3000000 for 9000
@@ -586,7 +586,7 @@ lin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
 <C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Paper_Summary.pdf (3 pages, 213761 bytes).
+Output written on Paper_Summary.pdf (3 pages, 213870 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
