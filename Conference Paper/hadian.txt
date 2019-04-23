@@ -1,2 +1,4 @@
 Generally it's okay, but a couple points:
-You don't usually see subsections like motivation, contributions, paper structure, etc. as you have put in your introductions. The flow of the intoduction and the paragraphs in implicitly 
+- You don't usually see subsections like motivation, contributions, paper structure, etc. as you have put in your introductions. Everybody gets that form the flow of the introduction and the paragraphs orders. 
+- In practical papers, specially in computer science papers we usually don’t see methodology. We have system model and proposed scheme.
+- Section numbers in last part of introduction should be roman numbers, not English numbers.  To do that, use \ref{sectionlabel}. You need to give labels to your sections using \label{sectionlable} after each \section{sectiontitle}.
