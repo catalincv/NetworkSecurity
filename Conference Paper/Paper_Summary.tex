@@ -39,10 +39,10 @@ in-app ads, Android, mobile applications, API, advertisements, ad networks.
 \end{IEEEkeywords}
 
 \section{Introduction}
-\subsection{Motivation and State of the Art}
+\label{SectionOne}
 The focus of this work is the Android platform which has increasingly become the dominant operating system for mobile devices. Its salient importance is supported by numbers and facts rigorously cited and examined by the authors. Android’s worldwide market share has hit 86.1\% in the first quarter of 2017 and the number of apps in Google Play has reached 2.9 million in the February 2017, 95\% of which are free apps\cite{Gartner}. As most of the free apps leverage third-party in-app advertising for generating money, having a good understanding of ad networks and their associated ad types is of great importance. According to an economic forecast\cite{Visionmobile}, the in-app advertising market is worth around 62 billion US dollars and significantly affects thousands of people at an economic level. Therefore, by providing clear rules and principles, this research is extremely valuable as in-depth analysis and coherent guidelines are essential for adequate development of the in-app advertisement segment. Although the mobile advertising ecosystem has been the subject of numerous recent researches, most of the efforts focus on security, the privacy of ad networks, mobile ad fraud, and ad targeting. The current state of the art does not include any published materials that address the challenge tackled in this paper.
 
-\subsection{Contribution}
+
 To provide a reliable set of principles to follow when it comes to choosing best ad networks and appropriate ad types, the paper studies Android in-app advertising from a developer’s perspective. The authors developed a static analysis framework for Android apps called MAdLens. MAdLens was used to automate the tedious task of extracting relevant information from the pool of 277,616 free Android applications, randomly selected from Google Play Store. Leveraging on this system, they further performed a large-scale measurement across the Android market and identified trends in the usage of mobile ad networks, aggressiveness difference of ad types and its impact on the usability of the apps. There are three major contributions made by this research:
 \begin{itemize}
 \item It is the first to provide practical guidelines for stakeholders to monetize their apps through third-party in-app advertising.
@@ -50,15 +50,16 @@ To provide a reliable set of principles to follow when it comes to choosing best
 \item It is the first to provide a unified classification system for mobile in-app ads and measure the impact of different ad types on apps.
 \end{itemize}
 
-\subsection{Paper Structure}
-The first Section of their paper includes the abstract and the introduction which present the issue, its significance in the contemporary context, the concepts behind MAdLens, and some notable findings of in-app mobile advertising. Section 2 provides relevant background in Android third-party ads, while Section 3 offers a detailed analysis of MAdLens system as well as a comprehensive discussion of the methodology used by this system. Section 4 demonstrates the result of their large-scale measurements and gives explanations as well as implications based on their results. Section 5 discusses the limitations of their work. Section 6 presents related work and Section 7 concludes the paper.
+The remainder of this paper proceeds as follows: Section \ref{SectionTwo} presents related work and Section \ref{SectionThree} provides relevant background in Android third-party ads. Section \ref{SectionFour} offers a detailed analysis of MAdLens system as well as a succinct discussion of the methodology used by this system. Section \ref{SectionFive} communicates the results of the large-scale measurements and gives implications based on statistical observation. Section \ref{SectionSix} discusses the limitations and future work of the reference paper, while Section \ref{SectionSeven} concludes this writing.
 
 \section{Related Works}
+\label{SectionTwo}
 In recent years, mobile advertising has become an important topic for research especially because of the security concerns that it poses. Some of the preeminent materials mentioned in this paper study topics like the potential risks of embedded or in-app ad libraries \cite{Grace}, the risk associated with user data exposure to advertising libraries \cite{meng2016price}, a privacy protection framework to “achieve an equilibrium” between the developer’s revenue and the user’s privacy \cite{leontiadis2012don}, the mobile ad fraud perpetrated by Android apps \cite{crussell2014madfraud}, the user targeting strategies of top ad networks \cite{nath2015madscope}, or the use of machine-learning to detect ad libraries and then use code instrumentation to deescalate their unnecessary privileges \cite{liu2015efficient}.
 All these materials inspect the amount of sensitive information and the ways ad libraries handle it in order to provide relevant ads to the end users while preserving their individual privacy. For example, one of the studies showed that most existing libraries collect private information for legitimate targeting purposes (such as the user’s location) along with additional data whose purpose is hard to justify (such as the user’s call logs, phone number, browser bookmarks, or even the list of apps installed on the phone). Moreover, some libraries make use of an unsafe mechanism to directly fetch and run code from the Internet, which immediately leads to serious security risks \cite{Grace}. 
 Even though the issue regarding data security and its integrity in mobile applications is often addressed in academic literature, there is no guideline that helps stakeholders to make decisions about the appropriate ads for their software, besides the existing security recommendations. Therefore, the paper under discussion represents the state of the art in its area.
 
 \section{System Model}
+\label{SectionThree}
 \subsection{Mobile Ad Network and its Integration in Apps}
 The current ecosystem of mobile advertising involves three major members: the publishers who own a mobile application and who desire to display ads in their software to make revenue, the advertisers who pay to get their content advertised, and the ad networks which serve as intermediate platforms that bridge the connection between the first two members. To integrate the ad network mechanism developers must include one or more pre-compiled ad libraries provided by ad network companies. These libraries and their necessary dependencies are generally implemented in Java and come in the form of compiled jar files. After importing the libraries, programmers can interact with them using specific APIs. Most ad networks provide a rich API surface which allows developers to customize the visual aspects of the ads they are displaying. Additionally, relevant stakeholders need to create an account on the ad network’s website to set up the payment credentials and individual preferences (suitable ad contents, desired ad frequency, layout, format, and others). 
 
@@ -78,7 +79,8 @@ Although the Floating type of ad is not very common, it is relevant to the study
 The Embedded ad is considered to be the least Aggressive Format among the others. This type embeds advertisement content into a small window inside of the app. It can be displayed in many different ways, such as banner, video and etc. The ads displayed this way usually are very small and do not interrupt the flow of the app. They can also be ignored, skipped or closed.
 
 
-\section{Methodology}
+\section{Proposed Scheme}
+\label{SectionFour}
 \begin{figure}[htbp]
 	\includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{system.png}
 	\caption{Overview of MAdLens}
@@ -87,6 +89,7 @@ The Embedded ad is considered to be the least Aggressive Format among the others
 The authors created MAdLens system (Fig. \ref{fig:system} ) which can identify internal third-party ad network modules from an Android app, map APIs of ad networks to specific ad types, and generate a detailed report of all the ad information for each app using static analysis techniques. Part of this system is a crawler that randomly picks applications from Google Play to create the Android App Dataset. For each application in the dataset, MAdLens automatically distinguishes all existing ad networks and then, using the API Mapping created based on Ad network SDK Documentation, classifies the present APIs in one of the five categories defined by the authors and generates an appropriate summary. To extract the relevant information from the applications, the system considers the fact that ads can be implemented either in the resource file (XML) or in Java code. For resources files, they decompile the apk file with Androidguard to get all the Android layout files, then parse all the XML to find the ads. Similarly, for Java code, the smali code is generated by Androguard after decompiling the apk file and ads are recognized in the smali text.
 
 \section{Data Analysis and Results}
+\label{SectionFive}
 The research paper revealed multiple useful discoveries regarding mobile ads for Android applications. Developers may want to pay attention to the different implications that the authors have concluded after conducting a large-scale measurement study. There are 8 crucial implications which arose during the analysis:
 \begin{itemize}
 \item Due to the rise of different ad networks, developers have many different choices when it comes to determining ad placement in their apps. However, most developers take a more conservative approach when it comes to ads: 71\% of apps contain at most one ad library.
@@ -99,9 +102,11 @@ The research paper revealed multiple useful discoveries regarding mobile ads for
 \item Even though the previous implications may suggest that developers should stick to Low-Aggressiveness ads, after analyzing the Aggressiveness of the ads hosted by various applications, the research paper concludes a different idea. Developers can use both Low and High Aggressiveness ads at the same time to maximize their revenue. However, this practice should be carefully implemented and thoughtfully monitored.
 \end{itemize}
 \section{Limitations and Future Work}
+\label{SectionSix}
 MAdLens takes the static approach of analyzing and extracting the APIs from Android applications. Therefore, it has the inherited limitations of static analysis. The system counts the number of occurrences of various APIs at a specific time and because of the code control flow, some portions of the code are not necessarily executed. Thus, investigated apps could have had additional ads which were not captured by the system because they were not displayed when the experiment was conducted. There are dynamic approaches which can inspect an app’s run-time behavior, but these are still very challenging to implement at a large scale. A viable alternative proposed in the paper was a dynamic solution based on image recognition techniques to identify ad activities on the user interface. However, this option was left by the authors for future work as it required significant additional research.
 
 \section{Conclusion}
+\label{SectionSeven}
 The analyzed paper represents one major step forward for the in-app advertising industry. It manages to fill in a gap caused by the lack of theoretical knowledge by providing insights for developers about how to optimize their app monetization with optimal ad placement choices. The authors collected 277,616 Android apps belonging to more than 48 categories and performed a comprehensive exploration before coming up with valuable results. These findings are able guide any mobile app programmer into Android in-app ad best practice.
 
 
