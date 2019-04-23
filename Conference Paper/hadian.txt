@@ -1,0 +1,2 @@
+Generally it's okay, but a couple points:
+You don't usually see subsections like motivation, contributions, paper structure, etc. as you have put in your introductions. The flow of the intoduction and the paragraphs in implicitly 
