@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  23 APR 2019 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  24 APR 2019 11:34
 entering extended mode
 **./Paper_Summary.tex
 (Paper_Summary.tex
@@ -573,7 +573,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  4391 strings out of 492945
  66175 string characters out of 3122255
- 140165 words of memory out of 3000000
+ 141165 words of memory out of 3000000
  8229 multiletter control sequences out of 15000+200000
  35842 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -586,7 +586,7 @@ lin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
 <C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/Catalin Veghes/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on Paper_Summary.pdf (4 pages, 219067 bytes).
+Output written on Paper_Summary.pdf (4 pages, 219091 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
